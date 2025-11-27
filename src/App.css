@@ -1,0 +1,458 @@
+/* Side bar items hover effect   */
+
+.sidebar-hover {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.sidebar-hover:hover {
+  transform: scale(1.1);
+}
+
+/* homepage quick filter  */
+.filter-box {
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-box:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+}
+
+/* homepage add new lead buttonn */
+.lead-btn:hover {
+  background-color: black !important;
+  color: white !important;
+  border-color: #fff !important;
+}
+
+/* Lead Details Table */
+.table tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table th {
+  font-weight: 600;
+  color: #333;
+}
+
+.table td {
+  color: #555;
+}
+
+/* leads dsipaly on homepage */
+.lead-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.lead-card {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none !important;
+  color: #000 !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover lift effect */
+.lead-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* leads page lead list */
+
+.row-lead td {
+  transition: transform 0.15s ease-in-out;
+}
+
+.row-lead:hover td {
+  transform: scale(1.015);
+  cursor: pointer;
+}
+
+.leads-table {
+  border: 1px solid #e5e7eb; /* light border all around */
+  border-bottom-color: #e5e7eb !important; /* remove dark line */
+}
+
+.leads-table tr:last-child td {
+  border-bottom-color: #e5e7eb !important; /* match row border */
+}
+
+/* MOBILE  ADJUSTMENTS */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.6rem !important;
+  }
+  h2 {
+    font-size: 1.35rem !important;
+  }
+  h3 {
+    font-size: 1.15rem !important;
+  }
+  h4 {
+    font-size: 1rem !important;
+  }
+  h5 {
+    font-size: 0.9rem !important;
+  }
+  h6,
+  p {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* homepage leads overview */
+.homepage-main {
+  margin-top: 36px !important;
+}
+
+/* Mobile view (max-width: 576px) */
+@media (max-width: 576px) {
+  .homepage-main {
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+}
+
+/* Show cards and hide table on screens up to 1024px (Mobile + Tablets) leads page */
+@media (max-width: 1024px) {
+  .leads-table {
+    display: none !important;
+  }
+  .lead-card-mobile {
+    display: block !important;
+  }
+}
+
+/* Show table on screens bigger than 1024px (Desktop only) leads page */
+@media (min-width: 1025px) {
+  .lead-card-mobile {
+    display: none !important;
+  }
+}
+
+/* Card container leads page */
+.lead-card-mobile-item {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+/* Field labels leads page */
+.lead-field-label {
+  font-weight: 600;
+  width: 110px;
+  display: inline-block;
+}
+
+/* Value text lead page */
+.lead-field-value {
+  font-weight: 400;
+}
+
+/* Layout: label + value aligned leads page */
+.lead-field-row {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* ✅ MOBILE PHONES — 1 card per row (iPhone SE, small iPhones) */
+.lead-grid-custom {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+}
+
+/* ✅ TABLETS — iPad Mini (768), iPad Air (820), iPad Pro (1024)
+   All should show 2 cards per row */
+@media (min-width: 577px) and (max-width: 1024px) {
+  .lead-grid-custom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ✅ DESKTOP — 4 cards per row */
+@media (min-width: 1025px) {
+  .lead-grid-custom {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.lead-grid-item {
+  width: 100%;
+}
+
+/* add lead back to dashboard button */
+.lead-w {
+  width: 75%;
+}
+
+/* iPad Mini 7.9" add lead back to dashboard button */
+@media (min-width: 768px) and (max-width: 820px) and (max-height: 1024px) {
+  .lead-w {
+    width: 100% !important;
+  }
+}
+
+/* iPad Air 10.9" add lead back to dashboard button */
+@media (min-width: 820px) and (max-width: 1024px) and (max-height: 1180px) {
+  .lead-w {
+    width: 100% !important;
+  }
+}
+
+/* iPad Pro 11" add lead back to dashboard button  */
+@media (min-width: 1024px) and (max-width: 1080px) and (max-height: 1366px) {
+  .lead-w {
+    width: 100% !important;
+  }
+}
+
+/* lead details page button */
+.lead-e {
+  width: 25%;
+}
+
+@media (min-width: 768px) and (max-width: 820px) and (max-height: 1024px) {
+  .lead-e {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1024px) and (max-height: 1180px) {
+  .lead-e {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1080px) and (max-height: 1366px) {
+  .lead-e {
+    width: 100% !important;
+  }
+}
+
+/* edit lead page back to dashboard button */
+@media (min-width: 820px) and (max-width: 820px) and (min-height: 1180px) and (max-height: 1180px) {
+  .back-btn-text {
+    display: none;
+  }
+}
+
+/* edit lead page back to dashboard button */
+@media (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
+  .back-btn-text {
+    display: none;
+  }
+}
+
+/* edit lead page back to dashboard button */
+@media (min-width: 912px) and (max-width: 912px) and (min-height: 1368px) and (max-height: 1368px) {
+  .back-btn-text {
+    display: none;
+  }
+}
+
+/* dedit lead page back to dashboard button */
+.back-btn-short {
+  display: none !important;
+}
+
+/* edit lead page back to dashboard button*/
+@media (min-width: 820px) and (max-width: 820px) and (min-height: 1180px) and (max-height: 1180px),
+  (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px),
+  (min-width: 912px) and (max-width: 912px) and (min-height: 1368px) and (max-height: 1368px) {
+  .back-btn-text {
+    display: none !important;
+  }
+  .back-btn-short {
+    display: inline !important;
+  }
+}
+
+/* Large screens ≥ 992px  report page button */
+@media (min-width: 992px) {
+  .back-btn-lg {
+    width: 75% !important;
+  }
+}
+
+/*    button add new agent agent page */
+
+@media (max-width: 767px) {
+  .back-btn-agent {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Add new Agent page - mobile*/
+@media (max-width: 767px) {
+  .back-btn-agent {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* Add new Agent page */
+  .add-agent-form {
+    width: 100% !important;
+    padding: 1.5rem !important;
+    margin-top: 1.5rem !important;
+  }
+}
+
+/* Add new Agent page */
+@media (max-width: 767px) {
+  .add-agent-form-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+
+/* Add new Agent page */
+@media (min-width: 768px) {
+  .add-agent-form-wrapper {
+    display: block !important;
+    justify-content: flex-start !important;
+  }
+}
+
+/* add new agent page */
+@media (max-width: 991px) {
+  .back-btn-agent {
+    margin-left: 0 !important;
+  }
+}
+
+/* Mobile responsiveness for EditAgent page */
+@media (max-width: 768px) {
+  .edit-agent-container {
+    margin-top: 7rem !important;
+  }
+
+  .edit-agent-back-btn {
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .edit-agent-title {
+    text-align: center !important;
+    margin-top: 1rem !important;
+  }
+
+  .edit-agent-form {
+    margin: 0 auto !important;
+  }
+}
+
+/*  agent details page mobile */
+
+.desktop-edit-btn {
+  display: inline-block !important;
+}
+
+.mobile-edit-btn {
+  display: none !important;
+}
+
+@media (max-width: 767.98px) {
+  .desktop-edit-btn {
+    display: none !important;
+  }
+  .mobile-edit-btn {
+    display: inline-block !important;
+    
+   
+  }
+
+  .agent-details-container .row {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .agent-heading {
+    text-align: center !important;
+  }
+
+  .agent-details-container .col-2,
+  .agent-details-container .col-10 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .mobile-center-block {
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .back-agent-details {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .agent-details-container hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .edit-agent-btn-mobile {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+    border-radius: 0.2rem !important;
+    width: 25% !important;
+  }
+
+  .desktop-table-only {
+    display: none !important;
+  }
+
+  .lead-card-mobile {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 1.3rem;
+    margin: 1rem 0;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+
+
+
+
+
