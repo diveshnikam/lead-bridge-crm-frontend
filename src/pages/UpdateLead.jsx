@@ -228,7 +228,7 @@ const UpdateLead = () => {
                 className="btn btn-white border lead-btn"
               >
                 <i className="bi bi-arrow-left me-2"></i>
-                <span className="back-btn-text">Back To Dashboard</span>
+                <span className="back-btn-text">Back To Lead Details</span>
                 <span className="back-btn-short">Back</span>
               </Link>
             </div>
